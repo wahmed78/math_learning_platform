@@ -1,0 +1,15 @@
+@responsive {
+  .container-sm { max-width: 640px; }
+  .container-md { max-width: 768px; }
+  .container-lg { max-width: 1024px; }
+  .container-xl { max-width: 1280px; }
+}
+
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .mobile-stack { flex-direction: column; }
+  .mobile-hide { display: none; }
+}

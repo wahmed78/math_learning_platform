@@ -1,0 +1,18 @@
+.theme-light {
+    --bg-primary: #ffffff;
+    --text-primary: #1f2937;
+    --accent-color: #4f46e5;
+  }
+  
+  .theme-dark {
+    --bg-primary: #1f2937;
+    --text-primary: #f9fafb;
+    --accent-color: #818cf8;
+  }
+  
+  .theme-playful {
+    --bg-primary: #fef3c7;
+    --text-primary: #92400e;
+    --accent-color: #f59e0b;
+  }
+  
