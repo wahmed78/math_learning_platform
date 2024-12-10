@@ -1,0 +1,16 @@
+import React from 'react';
+
+export const throttle = (func, limit) => {
+  let inThrottle;
+  return function (...args) {
+    if (!inThrottle) {
+      func.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+};
+
+export const ThrottleProvider = ({ children }) => {
+  return <>{children}</>;
+};

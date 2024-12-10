@@ -11,7 +11,7 @@ import { useStore } from './store';
 import './styles/globals.css';
 
 const App: React.FC = () => {
-  const isLoading = useStore(state => state.isLoading);
+  const isLoading = useStore((state) => state.isLoading);
 
   return (
     <ErrorBoundary>
@@ -39,3 +39,5 @@ const App: React.FC = () => {
     </ErrorBoundary>
   );
 };
+
+export default App;

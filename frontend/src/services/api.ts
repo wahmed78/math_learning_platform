@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = process.env.REACT_APP_API_URL || 'https://postgresql://postgres:tiuPShvZXsxpFwpceXxGSuRnzdupBwwZ@postgres.railway.internal:5432/railway;
 
 export const api = axios.create({
   baseURL: API_URL,
